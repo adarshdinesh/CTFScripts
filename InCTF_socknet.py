@@ -15,7 +15,7 @@ def submit(flags):
         for flag in flags:
 		        t.write(flag+"\n")
 		        print flag
-            print t.get_socket().recv(1024).strip()
+        print t.get_socket().recv(1024).strip()
         t.close()
         time.sleep(5)
 
